@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/KitchenOTwoCardProductDetailed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KitchenTwoCardProductDetailed"
+    >
+
+
+    <Button
+        android:id="@+id/KitchenTwoDetailedCartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/detailed_product_button_bg"
+        android:drawableEnd="@drawable/ic_add_to_cart"
+        android:text="В корзину"
+        android:textColor="#555555"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/KitchenTwoDetailedProductImg"
+        app:layout_constraintStart_toStartOf="@+id/guideline13" />
+
+    <Button
+        android:id="@+id/KitchenTwoDetailedToOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/detailed_product_button_bg"
+        android:drawableEnd="@drawable/detailed_card_product_favorite"
+        android:text="К заказам"
+        android:textColor="#555555"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toEndOf="@+id/KitchenTwoDetailedCartBtn" />
+
+    <TextView
+        android:id="@+id/KitchenTwoProductNameDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:text="Название"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <TextView
+        android:id="@+id/KitchenTwoPriceDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/KitchenTwoProductNameDetailed"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <ImageView
+        android:id="@+id/KitchenTwoDetailedProductImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/burger2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание:"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="@+id/guideline13" />
+
+    <TextView
+        android:id="@+id/KitchenTwoDetailedDescFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание описание"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ингридиенты"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline13" />
+
+
+    <TextView
+        android:id="@+id/KitchenTwoDetailedContentsFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ингиридпара"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="250dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="377dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="328dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="590dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UserCabinet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserCabinet">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="560dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="-150dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="172dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="560dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="-120dp"
+        android:src="@drawable/people"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11" />
+
+    <TextView
+        android:id="@+id/UserCabinetMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Личный кабинет"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/profile_pic"
+        android:src="@drawable/burger2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11" />
+
+    <TextView
+        android:id="@+id/UserCabinetInfoPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eldar"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic" />
+
+
+    <Button
+        android:id="@+id/UserCabinetChangePfpBtn"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#82BB31"
+        android:padding="15dp"
+        android:text="Поменять фото профиля"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <Button
+        android:id="@+id/UserCabinetOrdersBtn"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#82BB31"
+        android:padding="15dp"
+        android:text="Мои заказы"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/UserCabinetChangePfpBtn"
+        app:layout_constraintStart_toStartOf="@+id/UserCabinetChangePfpBtn"
+        app:layout_constraintTop_toBottomOf="@+id/UserCabinetChangePfpBtn" />
+
+    <Button
+        android:id="@+id/PersData"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#82BB31"
+        android:padding="15dp"
+        android:text="личные данные"
+        android:textColor="#F6F6F6"
+        app:layout_constraintEnd_toEndOf="@+id/UserCabinetOrdersBtn"
+        app:layout_constraintStart_toStartOf="@+id/UserCabinetOrdersBtn"
+        app:layout_constraintTop_toBottomOf="@+id/UserCabinetOrdersBtn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="221dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="35dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="372dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

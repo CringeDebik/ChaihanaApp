@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="false"
+    android:focusableInTouchMode="false"
+    android:touchscreenBlocksFocus="false"
+    tools:context=".Registration">
+
+
+    <TextView
+        android:id="@+id/Welcometxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Добро пожаловать!"
+        android:textColor="#82BB31"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/WarningRegistrationName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <EditText
+        android:id="@+id/RegistrationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_user_focused"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WarningRegistrationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Warning"
+        android:textColor="#C82B2B"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/RegistrationName"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationName" />
+
+    <EditText
+        android:id="@+id/RegistrationPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_password_focused"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegistrationPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationPhoneNumber" />
+
+    <TextView
+        android:id="@+id/WarningRegistrationPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Warning"
+        android:textColor="#C82B2B"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/RegistrationPassword"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationPassword" />
+
+    <EditText
+        android:id="@+id/RegistrationEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_focused"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Почта"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegistrationName"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationName"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationName" />
+
+    <TextView
+        android:id="@+id/WarningRegistrationEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Warfgf"
+        android:textColor="#C82B2B"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/RegistrationEmail"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationEmail" />/>
+
+    <EditText
+        android:id="@+id/RegistrationPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_phone_number_focused"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Номер телефона"
+        android:inputType="phone"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegistrationEmail"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationEmail"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationEmail" />
+
+    <TextView
+        android:id="@+id/WarningRegistrationPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Warning"
+        android:textColor="#C82B2B"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/RegistrationPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationPhoneNumber" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#99CC33"
+        android:padding="15dp"
+        android:text="Регистрация"
+        app:layout_constraintEnd_toEndOf="@+id/RegistrationPassword"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationPassword"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationPassword" />
+
+    <TextView
+        android:id="@+id/RegistrationAccountExists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:padding="7dp"
+        android:text="Уже есть аккаунт?"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister" />
+
+    <AbsoluteLayout
+        android:id="@+id/absoluteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="300dp"
+            android:layout_height="176dp"
+            android:layout_x="-56dp"
+            android:layout_y="-50dp"
+            android:background="@drawable/shape"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="-87dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="200dp"
+            android:layout_height="109dp"
+            android:layout_x="203dp"
+            android:layout_y="-42dp"
+            android:background="@drawable/shape"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="-87dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="412dp"
+            android:layout_height="201dp"
+            android:layout_x="-6dp"
+            android:layout_y="661dp"
+            android:background="@drawable/shape"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="-87dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_x="41dp"
+            android:layout_y="700dp"
+            android:text="Регистрируясь в приложение 'ЧАЙХАНА'  вы даете согласие
+на обработку ваших личных данных.Внимательно читайте условия соглашения."
+            android:textColor="#5C5C5C"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="240dp"
+            android:layout_height="54dp"
+            android:layout_x="-10dp"
+            android:layout_y="30dp"
+            android:src="@mipmap/app_text_logo" />
+
+
+    </AbsoluteLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="textView7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="668dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="91dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="130dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

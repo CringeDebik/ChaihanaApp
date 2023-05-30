@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="560dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="-150dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="-120dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="560dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="-250dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/UserCabinetMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Ваша личная информация"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserCabinetMainText"
+        app:srcCompat="@drawable/lock_pers" />
+
+    <ImageView
+        android:id="@+id/woman"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/womanwithphone" />
+
+    <EditText
+        android:id="@+id/RegistrationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:background="@drawable/custom_input"
+        android:clickable="false"
+        android:drawableStart="@drawable/custom_user_focused"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Eldar"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/RegistrationPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:clickable="false"
+        android:drawableStart="@drawable/custom_password_focused"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="MINECRAFT1"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegistrationPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationPhoneNumber" />
+
+    <EditText
+        android:id="@+id/RegistrationEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:clickable="false"
+        android:drawableStart="@drawable/custom_email_focused"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="ekrutoj@gmail.com"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegistrationName"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationName"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationName" />
+
+    <EditText
+        android:id="@+id/RegistrationPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:clickable="false"
+        android:drawableStart="@drawable/custom_phone_number_focused"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="87026360683"
+        android:inputType="phone"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegistrationEmail"
+        app:layout_constraintStart_toStartOf="@+id/RegistrationEmail"
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
